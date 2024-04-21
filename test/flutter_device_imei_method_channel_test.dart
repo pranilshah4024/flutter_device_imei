@@ -17,7 +17,7 @@ void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
   MethodChannelFlutterDeviceImei platform = MethodChannelFlutterDeviceImei();
-  const MethodChannel channel = MethodChannel('flutter_device_imei');
+  const MethodChannel channel = MethodChannel('@pranilshah4024/flutter_device_imei');
 
   setUp(() {
     TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger.setMockMethodCallHandler(

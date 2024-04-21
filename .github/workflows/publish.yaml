@@ -1,8 +1,11 @@
 
+#on:
+#  release:
+#    branches:
+#      - main
 on:
-  release:
-    branches:
-      - main
+  push:
+    branches: [ "main" ]
 jobs:
   build:
     runs-on: ubuntu-latest
