@@ -2,3 +2,6 @@
 
 * Provides consistent unique identifier for both android and iOS.
 
+## 0.0.2 
+
+* Update Readme File
