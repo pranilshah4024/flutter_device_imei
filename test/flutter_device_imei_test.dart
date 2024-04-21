@@ -9,6 +9,7 @@ Github : https://github.com/pranilshah4024
 Medium : https://medium.com/@pranilshah4024
 Website : https://pranilshah.in/
 */
+import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_device_imei/flutter_device_imei.dart';
 import 'package:flutter_device_imei/flutter_device_imei_platform_interface.dart';
@@ -32,6 +33,7 @@ class MockFlutterDeviceImeiPlatform
 }
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   TestWidgetsFlutterBinding.ensureInitialized();
   final FlutterDeviceImeiPlatform initialPlatform = FlutterDeviceImeiPlatform.instance;
 
