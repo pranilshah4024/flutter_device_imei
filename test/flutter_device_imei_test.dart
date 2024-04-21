@@ -32,6 +32,7 @@ class MockFlutterDeviceImeiPlatform
 }
 
 void main() {
+  TestWidgetsFlutterBinding.ensureInitialized();
   final FlutterDeviceImeiPlatform initialPlatform = FlutterDeviceImeiPlatform.instance;
 
   test('$MethodChannelFlutterDeviceImei is the default instance', () {
