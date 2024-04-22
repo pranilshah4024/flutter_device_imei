@@ -25,9 +25,9 @@ jobs:
         run: dart format --fix .
       - name: Check Publish Warnings
         run: dart pub publish --dry-run
-#      - name: Publish
-#        uses: k-paxian/dart-package-publisher@v1.5.1
-#        with:
-#          credentialJson: ${{ secrets.FLUTTER_DEVICE_IMEI_SECRET }}
-#          flutter: true
-#          skipTests: true
+      - name: Publish
+        uses: k-paxian/dart-package-publisher@v1.5.1
+        with:
+          credentialJson: ${{ secrets.FLUTTER_DEVICE_IMEI_SECRET }}
+          flutter: true
+          skipTests: true
