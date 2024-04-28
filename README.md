@@ -15,6 +15,9 @@ import 'package:flutter_device_imei/flutter_device_imei.dart';
 String imei = await FlutterDeviceImei.instance.getIMEI();
 ```
 
+### Support 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W3R3UVR)
+[![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/pranilshah)
 
 ### Author
 
