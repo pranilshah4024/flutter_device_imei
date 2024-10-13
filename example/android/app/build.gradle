@@ -24,10 +24,14 @@ if (flutterVersionName == null) {
 
 android {
     namespace "com.pranilshah.flutter_device_imei_example"
-    compileSdk flutter.compileSdkVersion
-    ndkVersion flutter.ndkVersion
+    compileSdk = 34
+    compileSdk = flutter.compileSdkVersion
+//    compileSdk flutter.compileSdkVersion
+//    ndkVersion flutter.ndkVersion
+    ndkVersion = "26.1.10909125"
 
     compileOptions {
+        // Sets Java compatibility to Java 8
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
@@ -45,9 +49,12 @@ android {
         applicationId "com.pranilshah.flutter_device_imei_example"
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
-        minSdkVersion flutter.minSdkVersion
-        targetSdkVersion flutter.targetSdkVersion
-        versionCode flutterVersionCode.toInteger()
+        minSdk = 24
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutterVersionCode.toInteger()
+//        minSdkVersion flutter.minSdkVersion
+//        targetSdkVersion flutter.targetSdkVersion
+//        versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }
 
@@ -56,6 +63,8 @@ android {
             // TODO: Add your own signing config for the release build.
             // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig signingConfigs.debug
+            minifyEnabled false
+            shrinkResources false
         }
     }
 }

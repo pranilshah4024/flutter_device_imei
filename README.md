@@ -1,6 +1,6 @@
 # Flutter Device IMEI
 
-[ ![Build version](https://img.shields.io/badge/pub-v0.0.1-green)](https://pub.dev/packages/flutter_device_imei)
+[ ![Build version](https://img.shields.io/badge/pub-v0.0.3-blue)](https://pub.dev/packages/flutter_device_imei)
 
 Flutter plugin to get real and consistent IMEI for Mobile Device
 
@@ -21,6 +21,6 @@ String imei = await FlutterDeviceImei.instance.getIMEI();
 
 ### Author
 
-This plugin is developed, **by Pranil Shah**
+This plugin is developed, **by [Pranil Shah](https://linktr.ee/pranilshah)**
 
 
