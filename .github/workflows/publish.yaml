@@ -1,75 +1,33 @@
-name: Publish Flutter Package
 
+#on:
+#  release:
+#    branches:
+#      - main
 on:
   push:
     branches: [ "main" ]
-
 jobs:
-  publish:
-    name: Publish to pub.dev
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0  # Fetch full history to get tags
-
-      - name: Setup Flutter
+      - uses: actions/checkout@v4
+      - name: Install Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.19.6'  # Use latest stable Flutter version
-#          cache: true
-
-      - name: Install Dependencies
+          flutter-version: '3.19.6'
+      - name: Install dependencies
         run: flutter pub get
-
       - name: Analyze
         run: flutter analyze
-      #      - name: Run tests
-      #        run: flutter test
+#      - name: Run tests
+#        run: flutter test
       - name: Format code
         run: dart format --fix .
       - name: Check Publish Warnings
         run: dart pub publish --dry-run
-      - name: Decode Pub Credentials
-        env:
-          PUB_DEV_CREDENTIALS: ${{ secrets.FLUTTER_DEVICE_IMEI_SECRET }}
-
-        run: |
-          echo "$PUB_DEV_CREDENTIALS" > $HOME/.pub-cache/credentials.json
-
-      - name: Publish Package
-        run: flutter pub publish --force
-
-#on:
-#  push:
-#    branches: [ "main" ]
-#jobs:
-#  build:
-#    runs-on: ubuntu-latest
-#    steps:
-#      - name: Checkout Repository
-#        uses: actions/checkout@v4
-#        with:
-#          fetch-depth: 0
-#      - name: Install Flutter
-#        uses: subosito/flutter-action@v2
-#        with:
-#          flutter-version: '3.19.6'
-#      - name: Install dependencies
-#        run: flutter pub get
-#      - name: Analyze
-#        run: flutter analyze
-#      #      - name: Run tests
-#      #        run: flutter test
-#      - name: Format code
-#        run: dart format --fix .
-#      - name: Check Publish Warnings
-#        run: dart pub publish --dry-run
-#      - name: Publish
-#        uses: k-paxian/dart-package-publisher@v1.5.1
-#        with:
-#          credentialJson: ${{ secrets.FLUTTER_DEVICE_IMEI_SECRET }}
-#          flutter: true
-#          skipTests: true
+      - name: Publish
+        uses: k-paxian/dart-package-publisher@v1.5.1
+        with:
+          credentialJson: ${{ secrets.FLUTTER_DEVICE_IMEI_SECRET }}
+          flutter: true
+          skipTests: true
