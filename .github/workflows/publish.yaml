@@ -19,7 +19,7 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.19.6'  # Use latest stable Flutter version
-          cache: true
+#          cache: true
 
       - name: Install Dependencies
         run: flutter pub get
