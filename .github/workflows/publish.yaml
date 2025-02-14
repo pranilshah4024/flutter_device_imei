@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - name: Install Flutter
         uses: subosito/flutter-action@v2
         with:
@@ -19,8 +21,8 @@ jobs:
         run: flutter pub get
       - name: Analyze
         run: flutter analyze
-#      - name: Run tests
-#        run: flutter test
+      #      - name: Run tests
+      #        run: flutter test
       - name: Format code
         run: dart format --fix .
       - name: Check Publish Warnings
