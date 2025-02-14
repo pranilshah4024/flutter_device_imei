@@ -10,9 +10,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v4
         with:
-          ref: main
+          fetch-depth: 0
       - name: Install Flutter
         uses: subosito/flutter-action@v2
         with:
