@@ -22,8 +22,8 @@ jobs:
         run: flutter analyze
 #      - name: Run tests
 #        run: flutter test
-      - name: Format code
-        run: dart format --fix .
+#      - name: Format code
+#        run: dart format --fix .
       - name: Flutter Doctor
         run: flutter doctor
       - name: Publish
