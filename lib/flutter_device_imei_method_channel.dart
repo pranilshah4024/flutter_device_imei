@@ -24,14 +24,15 @@ class MethodChannelFlutterDeviceImei extends FlutterDeviceImeiPlatform {
 
   @override
   Future<String?> getPlatformVersion() async {
-    final String? version =
-        await methodChannel.invokeMethod<String>(RouteConstants.getPlatformVersion);
+    final String? version = await methodChannel
+        .invokeMethod<String>(RouteConstants.getPlatformVersion);
     return version;
   }
 
   @override
   Future<String?> getIMEI() async {
-    final String? version = await methodChannel.invokeMethod<String>(RouteConstants.getIMEI);
+    final String? version =
+        await methodChannel.invokeMethod<String>(RouteConstants.getIMEI);
     return version;
   }
 }

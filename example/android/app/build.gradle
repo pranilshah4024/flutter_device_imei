@@ -24,11 +24,11 @@ if (flutterVersionName == null) {
 
 android {
     namespace "com.pranilshah.flutter_device_imei_example"
-    compileSdk = 34
+    compileSdk = 36
     compileSdk = flutter.compileSdkVersion
 //    compileSdk flutter.compileSdkVersion
 //    ndkVersion flutter.ndkVersion
-    ndkVersion = "26.1.10909125"
+    ndkVersion = "28.2.13676358"
 
     compileOptions {
         // Sets Java compatibility to Java 8
