@@ -4,6 +4,16 @@ import 'dart:async';
 import 'package:flutter/services.dart';
 import 'package:flutter_device_imei/flutter_device_imei.dart';
 
+/// Copyright (C) 2025 Pranil Shah - All Rights Reserved
+/// You can read LICENCE.md file for the reference
+///
+/// Email : pranilshah4024@gmail.com
+/// Linkedin : https://www.linkedin.com/in/ipranilshah/
+/// Github : https://github.com/pranilshah4024
+/// Medium : https://medium.com/@ipranilshah
+/// Website : https://pranilshah.in/
+///
+
 void main() {
   runApp(const MyApp());
 }

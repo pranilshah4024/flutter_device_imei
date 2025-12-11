@@ -1,12 +1,11 @@
 /*
-
-Copyright (C) 2024 Pranil Shah - All Rights Reserved
+Copyright (C) 2025 Pranil Shah - All Rights Reserved
 You can read LICENCE.md file for the reference
 
 Email : pranilshah4024@gmail.com
-Linkedin : https://www.linkedin.com/in/pranilshah4024/
+Linkedin : https://www.linkedin.com/in/ipranilshah/
 Github : https://github.com/pranilshah4024
-Medium : https://medium.com/@pranilshah4024
+Medium : https://medium.com/@ipranilshah
 Website : https://pranilshah.in/
 */
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';

@@ -1,3 +1,7 @@
+## 0.0.5
+* Updated Flutter SDK
+* Added Inline Documentation
+
 ## 0.0.4
 * Updated Readme File
 
