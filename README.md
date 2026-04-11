@@ -4,6 +4,8 @@
 
 **Flutter Device IMEI** is a Flutter plugin designed to provide a reliable and consistent method for retrieving a device's unique identifier across Android and iOS platforms. This plugin helps developers access IMEI (International Mobile Equipment Identity) on Android devices and a consistent UUID string on iOS.
 
+![Alt text](images/banner.png)
+
 ## Features
 
 - Retrieves the IMEI for Android devices running versions below Android 10.
