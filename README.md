@@ -26,6 +26,19 @@ Run the following command to install:
 flutter pub get
 ```
 
+### iOS dependency manager
+
+The iOS implementation supports Swift Package Manager. Flutter 3.44 and later
+enable SwiftPM by default, so no additional setup is required. With Flutter
+3.24 through 3.43, enable it once before building the app:
+
+```sh
+flutter config --enable-swift-package-manager
+```
+
+The CocoaPods specification remains available for compatibility with Flutter
+apps that have not migrated to SwiftPM yet.
+
 ## Usage
 
 Import the package and use it to retrieve the IMEI or device identifier:
@@ -54,7 +67,7 @@ For Android 10 and above, no additional permissions are required as the plugin f
 | Platform | Support |
 |----------|---------|
 | Android  | ✅ (IMEI for < Android 10, ANDROID_ID for ≥ Android 10) |
-| iOS      | ✅ (Consistent UUID) |
+| iOS      | ✅ (Consistent UUID, iOS 13+, SwiftPM and CocoaPods) |
 
 ## Support
 
@@ -66,4 +79,3 @@ If you find this package helpful, consider supporting my work:
 ## Author
 
 This plugin is developed and maintained by **[Pranil Shah](https://linktr.ee/pranilshah)**.
-
