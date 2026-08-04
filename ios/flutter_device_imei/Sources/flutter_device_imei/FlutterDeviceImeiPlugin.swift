@@ -151,4 +151,3 @@ public class FlutterDeviceImeiPlugin: NSObject, FlutterPlugin {
           default:                                        return device
           }
           }
-
